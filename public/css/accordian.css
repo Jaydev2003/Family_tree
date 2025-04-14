@@ -1,0 +1,93 @@
+body {
+    background: #f4f4f9;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fold-content {
+    padding: 0;
+    margin: 0;
+}
+
+th {
+    padding: 15px 20px;
+    text-align: left;
+    color: #fff;
+    background-color: #5d02ff;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+th,
+td {
+    padding: 12px 18px;
+    text-align: left;
+    font-size: 15px;
+    color: black;
+}
+
+thead th {
+    background-color: #5d02ff;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e2e6ea;
+    transition: background 0.3s ease-in-out;
+}
+
+tbody tr.view {
+    cursor: pointer;
+}
+
+tbody tr.view.open {
+    background-color: white;
+    color: white;
+}
+
+tbody tr.fold {
+    display: none;
+}
+
+tbody tr.fold.open {
+    display: table-row;
+}
+
+.fold-content {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+table tbody tr td a {
+    color: #5d02ff;
+}
+
+table tbody tr td a:hover {
+    color: #e91e63;
+}

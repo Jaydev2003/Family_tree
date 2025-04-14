@@ -1,0 +1,285 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    color: #333;
+    
+}
+
+.container {
+    
+    margin: 20px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    
+}
+.alert-info{
+    border: 1px solid #0f5685 !important;
+    width: 30%;
+}
+
+.btn-primary {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #0f5685;
+    color: white;
+    border: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background: #0f5685;
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    transform: translateY(1px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 12px;
+    text-align: left;
+    font-size: 15px;
+    color: black;
+}
+
+
+
+thead th {
+    text-transform: uppercase;
+    background-color: #0f5685;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e2e6ea;
+    transition: background 0.3s ease-in-out;
+}
+
+tbody tr.view {
+    cursor: pointer;
+}
+
+tbody tr.view.open {
+    background-color: white;
+    color: white;
+}
+
+tbody tr.fold {
+    display: none;
+}
+
+tbody tr.fold.open {
+    display: table-row;
+}
+
+.fold-content {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+table tbody tr td a {
+    color: #0f5685;
+}
+
+table tbody tr td a:hover {
+    color: #e91e63;
+}
+
+.modal-content {
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    background-color: #0f5685;
+    color: white;
+}
+
+.modal-footer {
+    background-color: #f4f4f9;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+table.table-bordered {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.table-bordered th, table.table-bordered td {
+    border: 1px solid #d1d9e6;
+    padding: 10px;
+    text-align: left;
+}
+
+.table-bordered th {
+    background-color: #f4f4f9;
+}
+
+table.table-bordered td a {
+    color: #0f5685;
+    text-decoration: none;
+}
+
+table.table-bordered td a:hover {
+    text-decoration: underline;
+}
+
+.small-popup {
+    width: auto !important;
+    height: auto;
+    font-size: 14px !important;
+    padding: 10px !important;
+}
+
+
+.modal-table-header th {
+    padding: 15px 20px;
+    text-align: left;
+    color: #fff;
+    background-color: #0f5685; 
+    font-size: 16px;
+    letter-spacing: 0.5px;
+
+}
+
+
+.modal-dialog {
+    
+    
+   max-width:80%;
+}
+@media (max-width: 768px) {
+    .modal-dialog {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.main{
+    margin-top: 50px;
+}
+
+.plus-btn{
+    width: 20%;
+}
+
+#modalContent table thead th{
+    background-color: #0f5685; 
+    color: white;
+}
+.action {
+    margin-right: 10px; 
+    position: absolute; 
+    right: 0; 
+    z-index: 10; 
+    background: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    padding: 8px; 
+    display: none; 
+}
+
+.action ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.action li {
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.action li:hover {
+    background-color: #f1f1f1;
+}
+
+.action a {
+    text-decoration: none;
+    color: #333;
+}
+
+#search{
+    border-radius: 10px;
+}
+#search:hover{
+    border-color: #0f5685;
+}
+.btn-outline-primary{
+    color: #0f5685;
+    border-color: #0f5685;
+border-radius: 10px;
+}
+.btn-outline-primary:hover{
+background-color: #0f5685;
+border-radius: 10px;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+}
+
+.pagination .page-link {
+    font-size: 14px;
+    padding: 6px 12px; 
+    border-radius: 5px; 
+}
+
+.pagination .page-link:hover {
+    background-color: #0f5685;
+    color: white;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #0f5685;
+    color: white;
+}
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(243, 188, 188);
+    color: #f71616;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1050; 
+    text-align: center;
+}
+

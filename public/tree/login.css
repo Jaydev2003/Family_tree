@@ -1,0 +1,190 @@
+body {
+    background: linear-gradient(135deg, #eaedf0, #9690ee);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.form-container {
+    width: 380px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeInUp 0.6s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    color: #4e54c8;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    font-weight: 700;
+    position: relative;
+    animation: slideIn 0.6s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputBox {
+    position: relative;
+    text-align: left;
+}
+
+.inputBox label {
+    display: block;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #65656d;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #d1d9e6;
+    border-radius: 8px;
+    background: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.inputBox input:focus {
+    border-color: #6a5acd;
+    box-shadow: 0 4px 10px rgba(106, 90, 205, 0.3);
+}
+
+.inputBox input[type="submit"] {
+    background: linear-gradient(135deg, #6a5acd, #8369d8);
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.inputBox input[type="submit"]:hover {
+    background: linear-gradient(135deg, #8369d8, #6a5acd);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(106, 90, 205, 0.3);
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.toggle-password:hover {
+    color: #6a5acd;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 5px;
+    display: block;
+    animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20%, 60% {
+        transform: translateX(-10px);
+    }
+    40%, 80% {
+        transform: translateX(10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 90%;
+        padding: 25px;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .inputBox input {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .inputBox input[type="submit"] {
+        font-size: 14px;
+    }
+}
